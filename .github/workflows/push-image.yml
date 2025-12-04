@@ -25,4 +25,4 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/apache-con-ci:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/apache-con-ci:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_TOKEN }}/apache-con-ci:${{ github.sha }}
